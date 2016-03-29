@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6224C7D0523F62EA17241F74 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 02F96A1CDE6000FAE183B9A6 /* libPods.a */; };
 		E4F8988B1CAA45C900F2C7DE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E4F8988A1CAA45C900F2C7DE /* main.m */; };
 		E4F8988E1CAA45C900F2C7DE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E4F8988D1CAA45C900F2C7DE /* AppDelegate.m */; };
 		E4F898911CAA45C900F2C7DE /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E4F898901CAA45C900F2C7DE /* ViewController.m */; };
@@ -36,6 +37,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		02F96A1CDE6000FAE183B9A6 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		4DE109E32AE0C13D1B51BFE3 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		9404521DE7E360AAE592E4C9 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		E4F898861CAA45C900F2C7DE /* passwordGesture.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = passwordGesture.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E4F8988A1CAA45C900F2C7DE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		E4F8988C1CAA45C900F2C7DE /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -61,6 +65,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6224C7D0523F62EA17241F74 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +86,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		61157F1CC14535197C3542D0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				02F96A1CDE6000FAE183B9A6 /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		E4F8987D1CAA45C800F2C7DE = {
 			isa = PBXGroup;
 			children = (
@@ -88,6 +101,8 @@
 				E4F898A21CAA45C900F2C7DE /* passwordGestureTests */,
 				E4F898AD1CAA45C900F2C7DE /* passwordGestureUITests */,
 				E4F898871CAA45C900F2C7DE /* Products */,
+				F23DB6A8B38C236BDD04082E /* Pods */,
+				61157F1CC14535197C3542D0 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -145,6 +160,15 @@
 			path = passwordGestureUITests;
 			sourceTree = "<group>";
 		};
+		F23DB6A8B38C236BDD04082E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4DE109E32AE0C13D1B51BFE3 /* Pods.debug.xcconfig */,
+				9404521DE7E360AAE592E4C9 /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -152,9 +176,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E4F898B31CAA45C900F2C7DE /* Build configuration list for PBXNativeTarget "passwordGesture" */;
 			buildPhases = (
+				AAAE36408DE160CB074D5E46 /* Check Pods Manifest.lock */,
 				E4F898821CAA45C900F2C7DE /* Sources */,
 				E4F898831CAA45C900F2C7DE /* Frameworks */,
 				E4F898841CAA45C900F2C7DE /* Resources */,
+				E74E7F3F15E69639EA16BF80 /* Embed Pods Frameworks */,
+				B1B7D6F9C83DC13336029A8D /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -269,6 +296,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		AAAE36408DE160CB074D5E46 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		B1B7D6F9C83DC13336029A8D /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E74E7F3F15E69639EA16BF80 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		E4F898821CAA45C900F2C7DE /* Sources */ = {
@@ -417,6 +492,7 @@
 		};
 		E4F898B41CAA45C900F2C7DE /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4DE109E32AE0C13D1B51BFE3 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = passwordGesture/Info.plist;
@@ -428,6 +504,7 @@
 		};
 		E4F898B51CAA45C900F2C7DE /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9404521DE7E360AAE592E4C9 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = passwordGesture/Info.plist;
@@ -504,6 +581,7 @@
 				E4F898B51CAA45C900F2C7DE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E4F898B61CAA45C900F2C7DE /* Build configuration list for PBXNativeTarget "passwordGestureTests" */ = {
 			isa = XCConfigurationList;
@@ -512,6 +590,7 @@
 				E4F898B81CAA45C900F2C7DE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E4F898B91CAA45C900F2C7DE /* Build configuration list for PBXNativeTarget "passwordGestureUITests" */ = {
 			isa = XCConfigurationList;
@@ -520,6 +599,7 @@
 				E4F898BB1CAA45C900F2C7DE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
