@@ -15,6 +15,7 @@
 		E4F898991CAA45C900F2C7DE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E4F898971CAA45C900F2C7DE /* LaunchScreen.storyboard */; };
 		E4F898A41CAA45C900F2C7DE /* passwordGestureTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E4F898A31CAA45C900F2C7DE /* passwordGestureTests.m */; };
 		E4F898AF1CAA45C900F2C7DE /* passwordGestureUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = E4F898AE1CAA45C900F2C7DE /* passwordGestureUITests.m */; };
+		E4F898BE1CAA461400F2C7DE /* gestureView.m in Sources */ = {isa = PBXBuildFile; fileRef = E4F898BD1CAA461400F2C7DE /* gestureView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,8 @@
 		E4F898AA1CAA45C900F2C7DE /* passwordGestureUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = passwordGestureUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E4F898AE1CAA45C900F2C7DE /* passwordGestureUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = passwordGestureUITests.m; sourceTree = "<group>"; };
 		E4F898B01CAA45C900F2C7DE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E4F898BC1CAA461400F2C7DE /* gestureView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = gestureView.h; sourceTree = "<group>"; };
+		E4F898BD1CAA461400F2C7DE /* gestureView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = gestureView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +108,8 @@
 				E4F8988D1CAA45C900F2C7DE /* AppDelegate.m */,
 				E4F8988F1CAA45C900F2C7DE /* ViewController.h */,
 				E4F898901CAA45C900F2C7DE /* ViewController.m */,
+				E4F898BC1CAA461400F2C7DE /* gestureView.h */,
+				E4F898BD1CAA461400F2C7DE /* gestureView.m */,
 				E4F898921CAA45C900F2C7DE /* Main.storyboard */,
 				E4F898951CAA45C900F2C7DE /* Assets.xcassets */,
 				E4F898971CAA45C900F2C7DE /* LaunchScreen.storyboard */,
@@ -272,6 +277,7 @@
 			files = (
 				E4F898911CAA45C900F2C7DE /* ViewController.m in Sources */,
 				E4F8988E1CAA45C900F2C7DE /* AppDelegate.m in Sources */,
+				E4F898BE1CAA461400F2C7DE /* gestureView.m in Sources */,
 				E4F8988B1CAA45C900F2C7DE /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
