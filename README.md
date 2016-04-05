@@ -1,1 +1,2 @@
-#passwordGesture
+# PasswordGestureAndDateDescribe
+手势密码和微博时间描述,增加了一些NSString,NSDate类别
