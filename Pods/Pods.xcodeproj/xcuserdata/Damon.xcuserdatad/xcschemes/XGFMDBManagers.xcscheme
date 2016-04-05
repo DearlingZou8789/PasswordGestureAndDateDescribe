@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = '702479B605669C9943318B44'
+               BlueprintIdentifier = 'A761AC4C5B2663225A817EAA'
                BlueprintName = 'XGFMDBManagers'
                ReferencedContainer = 'container:Pods.xcodeproj'
                BuildableName = 'libXGFMDBManagers.a'>
